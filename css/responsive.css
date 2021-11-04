@@ -1,0 +1,100 @@
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        }
+
+    .enter-button {
+        margin-top: 200px;
+        text-align: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        color: aliceblue;
+        font-size: 22px;
+        background-color: rgba(0, 0, 0, 0.37);
+        border: 2px solid aliceblue;
+        padding: 10px;
+        transition: all ease 1s;
+        }
+
+    .wrapper {
+        display: block;
+        }
+
+    .parent {
+        padding: 0;
+    }
+
+    .logo-content {
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        width: 150px;
+        height: 150px;
+        margin-top: -75px; /* Half the height */
+        margin-left: -75px; /* Half the width */
+      }
+
+      .content-box {
+          display: block;
+          padding: 10%;
+      }
+
+      .box-price {
+          margin: 0 0 20px 0;
+      }
+
+
+
+      .bio-text > p {
+          width: 90%;
+      }
+
+      .content {
+          padding: 20px;
+      }
+      
+      .parallax-second {
+          min-height: 190px;
+      }
+
+      .parallax-third {
+        min-height: 190px;
+    }
+
+      .k {
+        padding: 0px;
+        font-size: 110px;
+        font-family: 'Great Vibes', cursive;
+        color: rgb(214, 213, 213);
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */
+      }
+
+      .text.front {
+        font-size: 70px;
+        font-family: 'Great Vibes', cursive;
+        color: rgb(168, 154, 88);
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */
+      }
+      
+      .text.back {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 20px;
+        letter-spacing:40px;
+        text-indent:40px;
+        color: aliceblue;
+        animation: slide-back 7s;
+        -moz-animation: slide-back 2s; /* Firefox */
+        -webkit-animation: slide-back 2s; /* Safari et Chrome */
+        -o-animation: slide-back 2s; /* Opera */
+      }
+
+}

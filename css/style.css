@@ -1,0 +1,486 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+  }
+
+html, body {
+  background-color: rgb(80, 82, 92);
+  color: #c4c4c4;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin', sans-serif;
+}
+
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(189, 189, 189, 0.493);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(189, 189, 189, 0.705);
+}
+
+.parallax {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/abstract-nail-art-manucure1.jpg");
+  min-height: 970px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-second {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/243587323_1483923755297128_1812078366962313305_n.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-third {
+  /* The image used */
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/250966547_412971453737632_5811749794062590923_n.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parent {
+    padding: 10px;
+    position: relative;
+    font-family: 'Great Vibes', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    top: 250px;
+    text-align: center;
+
+}
+.text.front {
+  font-size: 110px;
+  font-family: 'Great Vibes', cursive;
+  color: rgb(168, 154, 88);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari et Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+.text.back {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 30px;
+  letter-spacing:40px;
+  text-indent:40px;
+  color: aliceblue;
+  animation: slide-back 7s;
+  -moz-animation: slide-back 2s; /* Firefox */
+  -webkit-animation: slide-back 2s; /* Safari et Chrome */
+  -o-animation: slide-back 2s; /* Opera */
+}
+.k {
+  padding: 10px;
+  font-size: 130px;
+  font-family: 'Great Vibes', cursive;
+  color: rgba(253, 253, 253, 0.884);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari et Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+.hr-title {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: aliceblue;
+  border: aliceblue;
+  width: 300px;
+}
+
+
+@keyframes fadein {
+  from {
+      margin-top: -10px!important;
+      font-size: 150px;
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+    margin-top: -10px!important;
+    font-size: 150px;
+    opacity:0;  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+    margin-top: -10px!important;
+    font-size: 150px;
+    opacity:0;  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+    margin-top: -10px!important;
+    font-size: 150px;
+    opacity:0;
+    }
+  to {
+      opacity: 1;
+  }
+}
+.content {
+  background-color: rgb(228, 228, 228);
+  padding: 100px;
+  position: relative;
+}
+
+.bio-label {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.918);
+  border-radius: 50%;
+  transition: all ease 500ms;
+  margin-left: auto;
+  margin-right: auto; 
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.bio-label:hover {
+  background-color: rgba(223, 184, 79, 0.705);
+}
+.bio-label > img {
+  width: 80px;
+  height: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+.bio-text > p {
+  color: rgba(41, 41, 41, 0.801);
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+
+.hr-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 1px;
+  background-color: rgba(41, 41, 41, 0.801);
+  border: rgba(41, 41, 41, 0.801);
+  width: 100px;
+}
+.wrapper {
+  display: flex;
+
+}
+.column {
+  flex: 50%;
+}
+.logo-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+}
+
+.bio-label-text {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.more-button {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  color: black;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  text-decoration: none;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all ease 500ms;
+
+}
+
+.more-button:hover {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: auto;
+  display: flex;
+  text-decoration: none;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.parallax-pricing {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/243587323_1483923755297128_1812078366962313305_n.jpg");
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing-head {
+  padding: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.pricing-head > h1 {
+  width: fit-content;
+  padding-bottom: 10px;
+  color:rgb(42, 44, 51);
+  border-bottom: 3px solid rgb(168, 154, 88);
+}
+
+.content-box {
+  padding: 50px;
+  width: fit-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  animation: appaerContentBox 1s;
+  -moz-animation: appaerContentBox 1s; /* Firefox */
+  -webkit-animation: appaerContentBox 1s; /* Safari et Chrome */
+  -o-animation: appaerContentBox 1s; /* Opera */
+}
+
+
+@keyframes appaerContentBox {
+  from {
+      margin-top: 20px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@-moz-keyframes appaerContentBox { /* sur Firefox */
+  from {
+    margin-top: 20px;
+}
+  to {
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes appaerContentBox { /* sur Safari et Chrome */
+  from {
+    margin-top: 20px;
+}
+  to {
+    margin-top: 0;
+  }
+}
+@-o-keyframes appaerContentBox { /* sur Opera */
+  from {
+    margin-top: 20px;
+}
+  to {
+    margin-top: 0;
+  }
+}
+
+.box-price {
+  display: inline-block;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 300px;
+  max-width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box-price > hr {
+  width: 100%;
+  margin-top: 0;
+}
+
+.box-price > img {
+  width: 100px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 10px;
+}
+.first-part-nail {
+  background-image:   linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.205)
+  ),
+  url("../img/wedding.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100px;
+  background-size: 400px;
+}
+
+.first-part-eye {
+  background-image:   linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.205)
+  ),
+  url("../img/regard-trop-charge-750x410.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100px;
+  background-size: 300px;
+}
+.more-see {
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 1rem;;
+  background-color: rgb(41, 41, 41);
+  width: fit-content;
+  color: white!important;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+
+.more-see:hover {
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 1rem;;
+  background-color: rgb(138, 138, 138);
+  width: fit-content;
+  color: white!important;
+}
+
+.enter-button {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  padding: 10px;
+}
+.enter-button {
+  margin-top: 250px;
+  text-align: center;
+  display: flex;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  color: aliceblue;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.37);
+  border: 2px solid aliceblue;
+  padding: 10px;
+  transition: all ease 1s;
+  
+}
+
+.enter-button:hover {
+  color: black;
+  background-color: aliceblue;
+  border: 2px solid aliceblue;
+  text-decoration: none;
+}
+
+
+
