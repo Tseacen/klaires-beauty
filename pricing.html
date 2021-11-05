@@ -59,9 +59,10 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Accueil</a></li>
-                <li><a href="pricing.html" class="nav-link">Tarifs</a></li>
-                <li><a href="#contact-section" class="nav-link">Nous contacter</a></li>
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="pricing.html" class="nav-link">Tarifs & Prestations</a></li>
+                <li><a href="about-us.html" class="nav-link">Qui sommes-nous ?</a></li>
+                <li><a href="contact-us.html" class="nav-link">Nous contacter</a></li>
                 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
                 <li class="social"><a href="https://www.instagram.com/klaires.beauty/?hl=fr" target="_blank" class="nav-link"><span class="icon-instagram"></span></a></li>
               </ul>
@@ -88,6 +89,95 @@
   </head>
 
   <body>
+
+    <div id="box-overlay">
+      <div>
+
+        <div class="prestations">
+          <h1>Sur ongle naturel</h1>
+
+          <div class="prestation">
+            <p class="prestation">Pose de vernis semi permanent main/pied</p>
+            <p class="price">20€</p>
+          </div>
+
+          <div class="prestation">
+            <p class="prestation">Dépose de l’ancien vernis et pose d’un nouveau main/pied</p>
+            <p class="price">25€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Babyboomer</p>
+            <p class="price">30€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Option renfort</p>
+            <p class="price">30€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">French</p>
+            <p class="price">5€</p>
+          </div>
+          
+          <h1>Extension</h1>
+
+          <div class="prestation">
+            <p class="prestation">Capsule sans colle</p>
+            <p class="price">40€</p>
+          </div>
+
+          <div class="prestation">
+            <p class="prestation">Chablon avec gel de construction</p>
+            <p class="price">45€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Popit polygel	</p>
+            <p class="price">50€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Supplément couleur</p>
+            <p class="price">5€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Remplissage ¾ semaines (forfait)</p>
+            <p class="price">35€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Remplissage +de 4 semaines	(forfait)</p>
+            <p class="price">40€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Supplément babyboomer</p>
+            <p class="price">12€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Supplément french</p>
+            <p class="price">12€</p>
+          </div>
+          <div class="prestation">
+            <p class="prestation">Supplément longueur</p>
+            <p class="price">7€</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("box-overlay").style.display = "block";
+      }
+      
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("box-overlay").style.display = "none";
+
+      }
+      </script>
+    <div id="overlay" onclick="off()"></div>
+
+
       <style>
       .sticky-wrapper .site-navbar .site-menu > li > a {
         color: rgba(15, 15, 15, 0.7) !important;
@@ -103,7 +193,7 @@
           <div class="box-price">
             <div class="first-part-nail"></div>
           <hr>
-          <a class="more-see">Voir les tarifs</a>
+          <a class="more-see" onclick="on()">Voir les tarifs</a>
           </div>
 
           <div class="box-price">
@@ -116,11 +206,6 @@
 
       <div class="parallax-second"></div>
 
-      <div class="content">
-
-      </div>
-
-
       <footer>
         <div class="row-icon">
           <div class="column-icon"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></div>
@@ -130,5 +215,7 @@
         <hr>
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Klaires Beauty - Tous droits reservés</p>
       </footer>
+    </div>
+
   </body>
 </html>

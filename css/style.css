@@ -32,10 +32,11 @@ h1, h2, h3, h4, h5, h6 {
   -moz-animation: appearBtn 1s; /* Firefox */
   -webkit-animation: appearBtn 1s; /* Safari et Chrome */
   -o-animation: appearBtn 1s; /* Opera */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all ease 300ms;
+}
 #myBtn:hover {
-  background-color: rgb(255, 255, 255); /* Add a dark-grey background on hover */
+  background-color: rgb(168, 154, 88); /* Add a dark-grey background on hover */
 }
 
 
@@ -94,18 +95,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2e2e2e00;
+  background: #9e9e9ea2;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(189, 189, 189, 0.493);
+  background: rgba(32, 32, 32, 0.781);
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(189, 189, 189, 0.705);
+  background: rgba(61, 61, 61, 0.705);
 }
 
 .parallax {
@@ -136,23 +137,21 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+
 .parallax-third {
-  /* The image used */
   background-image: 
   linear-gradient(
     rgba(26, 26, 26, 0.767),
     rgba(37, 36, 34, 0.692)
   ),
   url("../img/250966547_412971453737632_5811749794062590923_n.jpg");
-  /* Set a specific height */
   min-height: 300px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .parent {
     padding: 10px;
@@ -168,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 110px;
   font-family: 'Great Vibes', cursive;
   color: rgb(168, 154, 88);
+  text-align: center;
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari et Chrome */
@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   letter-spacing:40px;
   text-indent:40px;
+  text-align: center;
   color: aliceblue;
   animation: slide-back 7s;
   -moz-animation: slide-back 2s; /* Firefox */
@@ -186,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-animation: slide-back 2s; /* Opera */
 }
 .k {
+  transform: rotate(45deg);
   padding: 10px;
   font-size: 130px;
   font-family: 'Great Vibes', cursive;
@@ -245,14 +247,215 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .content {
-  background-color: rgb(236, 209, 234);
+  background-color: #e7e7e7;
   padding: 100px;
   position: relative;
 }
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  animation: overlay 500ms;
+  -moz-animation: overlay 500ms; /* Firefox */
+  -webkit-animation: overlay 500ms; /* Safari et Chrome */
+  -o-animation: overlay 500ms; /* Opera */
+}
 
+.title-prestation {
+  padding: 4px;
+  font-size: 27px;
+  margin-top: 10px;
+}
+
+.prestations > h1 {
+  padding-bottom: 8px;
+  font-size: 30px;
+  border-bottom: 2px solid rgb(168, 154, 88);
+  width: fit-content;
+}
+@keyframes overlay {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+  @-moz-keyframes overlay { /* sur Firefox */
+  from {
+    opacity:0;  }
+  to {
+      opacity:1;
+  }
+}
+    @-webkit-keyframes overlay { /* sur Safari et Chrome */
+      from {
+        opacity:0;  }
+      to {
+          opacity:1;
+      }
+    }
+    @-o-keyframes overlay { /* sur Opera */
+      from {
+        opacity:0;
+        }
+      to {
+          opacity: 1;
+      }
+    }
+
+    
+@keyframes overlaySlide {
+  from {
+    top: 10%;
+  }
+  to {
+    top: 50%;
+  }
+}
+  @-moz-keyframes overlaySlide { /* sur Firefox */
+  from {
+    top: 10%;
+    }
+  to {
+    top: 10%;
+  }
+}
+    @-webkit-keyframes overlaySlide { /* sur Safari et Chrome */
+      from {
+        top: 10%;
+        }
+      to {
+        top: 50%;
+      }
+    }
+    @-o-keyframes overlaySlide { /* sur Opera */
+      from {
+        top: 10%;
+        }
+      to {
+        top: 50%;
+      }
+    }
+
+#box-overlay > div{
+  position: fixed;
+  width: 40%;
+  height: 80%;
+  display: block;
+  background-color: rgb(240, 226, 226);
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  border-radius: 3px;
+  margin-left: -20%;
+  margin-top: -20%;
+  left: 50%;
+  top: 50%;
+  z-index: 4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: overlaySlide 500ms;
+  -moz-animation: overlaySlide 500ms; /* Firefox */
+  -webkit-animation: overlaySlide 500ms; /* Safari et Chrome */
+  -o-animation: overlaySlide 500ms; /* Opera */
+}
+
+#box-overlay > div > .header {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.603);
+  border-radius: 3px;
+}
+
+.prestations {
+  padding: 20px;
+  overflow:auto;
+  background-color: rgb(235, 235, 235);
+  height: 100%;
+}
+
+div.prestation {
+  padding: 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+p.prestation {
+  max-width: 40%;
+  border-left: 1px solid rgb(73, 73, 73);
+  padding-left: 5px;
+  cursor:default;
+}
+p.prestation {
+  max-width: 40%;
+  border-left: 1px solid rgb(73, 73, 73);
+  padding-left: 5px;
+  transition: all ease 500ms;
+}
+
+p.prestation:hover {
+  max-width: 40%;
+  border-left: 1px solid rgb(168, 154, 88);
+  padding-left: 10px;
+}
+p.price {
+  color: black;
+  font-size: 15px;
+}
+
+#box-overlay {
+  position: fixed;
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.labels4 {
+  margin-top: 50px;
+}
+
+.img-index-prestation {
+  width: auto;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+.img-index-prestation:hover {
+  width: auto;
+  display: absolute;
+  height: 350px;
+  margin: 10px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: rgb(168, 154, 88) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+  .prestations-index {
+  max-width: 90%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block!important;
+}
 .bio-label {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.918);
+  background-color: rgb(168, 154, 88) ;
   border-radius: 50%;
   transition: all ease 500ms;
   margin-left: auto;
@@ -261,10 +464,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
-.bio-label:hover {
-  background-color: rgba(223, 184, 79, 0.705);
-}
 .bio-label > img {
   width: 80px;
   height: auto;
@@ -283,6 +482,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  cursor: default;
+}
+.bio-text > h3 {
+  color: rgb(26, 26, 26);
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  font-family: 'Cabin', sans-serif;
+  cursor: default;
+
+}
+.bio-text > h3 > strong {
+  color: rgb(99, 86, 57);
+  transition: all ease 1s;
+}
+.bio-text > h3 > strong:hover {
+  color: rgb(153, 123, 59);
 }
 
 
@@ -297,7 +516,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper {
   display: flex;
-
 }
 .column {
   flex: 50%;
@@ -338,8 +556,8 @@ h1, h2, h3, h4, h5, h6 {
 .more-button:hover {
   text-align: center;
   padding: 10px;
-  background-color: black;
-  border: 2px solid black;
+  background-color: rgb(168, 154, 88);
+  border: 2px solid rgb(168, 154, 88);
   color: white;
   width: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -452,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .first-part-nail {
   background-image:   linear-gradient(
-    rgba(26, 26, 26, 0.767),
+    rgba(168, 155, 88, 0.788),
     rgba(37, 36, 34, 0.205)
   ),
   url("../img/wedding.jpg");
@@ -465,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .first-part-eye {
   background-image:   linear-gradient(
-    rgba(26, 26, 26, 0.767),
+    rgba(168, 155, 88, 0.856),
     rgba(37, 36, 34, 0.205)
   ),
   url("../img/regard-trop-charge-750x410.jpg");
@@ -483,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   border-radius: 2px;
   margin-bottom: 1rem;;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(168, 154, 88);
   width: fit-content;
   color: white!important;
   transition: all ease 500ms;
@@ -498,22 +716,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   border-radius: 2px;
   margin-bottom: 1rem;;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(206, 188, 99);
   width: fit-content;
   color: white!important;
 }
 
-.enter-button {
-  margin-top: 50px;
-  text-align: center;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  color: aliceblue;
-  border: 2px solid aliceblue;
-  padding: 10px;
-}
+
 .enter-button {
   margin-top: 250px;
   text-align: center;
@@ -533,10 +741,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .enter-button:hover {
   color: black;
-  background-color: aliceblue;
-  border: 2px solid aliceblue;
+  background-color: rgb(168, 154, 88);
+  border: 2px solid rgb(168, 154, 88);
   text-decoration: none;
 }
 
+.creations-title {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgb(168, 154, 88);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-four {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/four.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  } 
 
 
+#map {
+  height: 400px;
+  width: 100%;
+  }
