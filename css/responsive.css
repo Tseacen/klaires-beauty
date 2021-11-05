@@ -27,6 +27,10 @@
         padding: 0;
     }
 
+    .navlogo {
+        width: 30px;
+        height: auto;
+    }
     .logo-content {
         position: absolute;
         top: 0%;
