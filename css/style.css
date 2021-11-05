@@ -480,8 +480,8 @@ p.price {
   margin-left: auto;
   margin-right: auto;
   font-size: 25px;
-  font-family: 'Lato', sans-serif;
   cursor: default;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 .bio-text > h3 {
   color: rgb(26, 26, 26);
