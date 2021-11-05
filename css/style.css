@@ -589,6 +589,9 @@ p.price {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .pricing-head {
@@ -776,6 +779,9 @@ p.price {
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   } 
 
 
