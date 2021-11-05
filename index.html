@@ -89,6 +89,31 @@
 
 
   <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Revenir en haut de la page"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
       
       <div class="parallax">
         <div class="parent">
@@ -141,7 +166,44 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
           </div> 
           
-          <a class="more-button" href="https://www.biosculpturegel.fr/">En savoir plus</a>
+          <div class="wrapper">
+            <div class="column">
+              <div class="bio-label">
+                <img src="img/eyelashes-curler.png">
+              </div>
+              <hr class="hr-content">
+              <div class="bio-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
+              </div>   
+            </div>
+            <div class="column">
+              <div class="bio-label">
+                <img src="img/nail-art.png">
+              </div>
+              <hr class="hr-content">
+              <div class="bio-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
+              </div>           
+            </div>
+            <div class="column">
+              <div class="bio-label">
+                <img src="img/nail-art.png">
+              </div>
+              <hr class="hr-content">
+              <div class="bio-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
+              </div>           
+            </div>
+            <div class="column">
+              <div class="bio-label">
+                <img src="img/nail-art.png">
+              </div>
+              <hr class="hr-content">
+              <div class="bio-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
+              </div>           
+            </div>
+          </div>
         </div>
       </div>
 
