@@ -70,13 +70,23 @@
       .content {
           padding: 20px;
       }
+    
+      .parallax {
+        background-attachment: scroll;
+      }
       
       .parallax-second {
           min-height: 190px;
+          background-attachment: scroll;
       }
 
       .parallax-third {
         min-height: 190px;
+        background-attachment: scroll;
+      }
+      .parallax-four {
+        min-height: 190px;
+        background-attachment: scroll;
     }
 
       .k {
@@ -111,5 +121,57 @@
         -webkit-animation: slide-back 2s; /* Safari et Chrome */
         -o-animation: slide-back 2s; /* Opera */
       }
+
+      .pricing-head {
+          margin-top: 15%;
+      }
+
+      #box-overlay > div {
+        position: fixed;
+        width: 80%;
+        height: 75%;
+        display: block;
+        top: 25%;
+        margin-left: -40%;
+        margin-top: -20%;
+        animation: overlaySlide 500ms;
+        -moz-animation: overlaySlide 500ms; /* Firefox */
+        -webkit-animation: overlaySlide 500ms; /* Safari et Chrome */
+        -o-animation: overlaySlide 500ms; /* Opera */
+      }
+   
+      @keyframes overlaySlide {
+        from {
+          top: 10%;
+        }
+        to {
+          top: 25%;
+        }
+      }
+        @-moz-keyframes overlaySlide { /* sur Firefox */
+        from {
+          top: 10%;
+          }
+        to {
+          top: 25%;
+        }
+      }
+          @-webkit-keyframes overlaySlide { /* sur Safari et Chrome */
+            from {
+              top: 10%;
+              }
+            to {
+              top: 25%;
+            }
+          }
+          @-o-keyframes overlaySlide { /* sur Opera */
+            from {
+              top: 10%;
+              }
+            to {
+              top: 25%;
+            }
+          }
+
 
 }

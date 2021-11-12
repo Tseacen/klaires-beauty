@@ -195,9 +195,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: slide-back 2s; /* Safari et Chrome */
   -o-animation: slide-back 2s; /* Opera */
 }
+.text.subtitle {
+  color: rgb(185, 185, 185);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing:23px;
+  margin-top: -40px;
+  font-weight: 700;
+  text-indent:23px;
+}
 .k {
-  transform: rotate(45deg);
-  padding: 10px;
+  -moz-transform: scale(-1, 1)!important;
+  -webkit-transform: scale(-1, 1)!important;
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);  padding: 10px;
   font-size: 130px;
   font-family: 'Great Vibes', cursive;
   color: rgba(253, 253, 253, 0.884);
@@ -335,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 10%;
     }
   to {
-    top: 10%;
+    top: 50%;
   }
 }
     @-webkit-keyframes overlaySlide { /* sur Safari et Chrome */
@@ -789,3 +800,46 @@ p.price {
   height: 400px;
   width: 100%;
   }
+
+.prestation.description {
+  text-align: center;
+  padding: 10px;
+  font-size: 19px;
+  justify-content:space-around;
+}
+
+.prestation.product {
+  padding-top: 50px;
+}
+.prestation.product > h1 {
+  font-size: 30px;
+  border-bottom: 1px solid rgb(168, 154, 88);
+}
+.information {
+  margin-top: -25px;
+  font-size: 15px;
+  color: #666666;
+  padding-left: 15px;
+  font-style: italic;
+}
+.advert {
+  font-style: italic;
+  text-align: center;
+}
+
+.advert > p > a {
+  text-decoration: none;
+  color: rgb(168, 154, 88);
+}
+.advert > p > a:hover {
+  color: rgb(204, 188, 107);
+}
+
+.gold {
+  color: rgb(146, 134, 76);
+}
+.bonus-price {
+  text-align: center;
+  margin-top: -5px;
+  color: #666666;
+}
