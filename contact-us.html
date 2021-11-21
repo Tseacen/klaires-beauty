@@ -56,9 +56,10 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="pricing.html" class="nav-link">Tarifs</a></li>
-                <li><a href="about-us.html" class="nav-link">Qui sommes-nous ?</a></li>
-                <li><a href="contact-us.html" class="nav-link">Nous contacter</a></li>
+                <li><a href="eye.html" class="nav-link">Beauté du regard</a></li>
+                <li><a href="nail.html" class="nav-link">Prothésiste Ongulaire</a></li>
+                <li><a href="about-us.html" class="nav-link">Qui suis-je ?</a></li>
+                <li><a href="contact-us.html" class="nav-link">Me contacter</a></li>
                 <li class="social"><a href="https://www.facebook.com/KB.Klaires.beauty/" target="_blank" class="nav-link"><span class="icon-facebook"></span></a></li>
                 <li class="social"><a href="https://www.instagram.com/klaires.beauty/?hl=fr" target="_blank" class="nav-link"><span class="icon-instagram"></span></a></li>
               </ul>
@@ -86,9 +87,53 @@
 
 
   <body>
+    <style>
+      .sticky-wrapper .site-navbar .site-menu > li > a {
+        color: rgba(15, 15, 15, 0.7) !important;
+      }
+      </style>
       <div class="content">
-        <h1 class="about-title">Qui sommes-nous</h1>
+        <div class="items">
+          <div class="item">
+            <div>
+              <img src="img/smartphone.png">
+              <div>              
+                <a href="tel:0648671007">06 48 67 10 07</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="img/home.png">
+              <div>              
+                Ballancourt-sur-Essonne, 91610 Essonne
+              </div>
+            </div>
+          </div>
 
+          <div class="item">
+            <div>
+              <img src="img/clock.png">
+              <div>
+                de Lundi au Samedi, de 9h30 à 19h00
+              </div>
+            </div>
+          </div>
+      </div>
+      <hr class="itemhr">
+      <p class="itemp">Klaires Beauty se déplace à votre domicile dans tout le 91 (tarif en supplément), ou bien vous reçoit sur son lieu de travail situé à Ballancourt-sur-Essonne.</p>
+
+
+      <script>
+        let map;
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+          });
+        }
+      </script>
       </div>
 
       <footer>
@@ -96,8 +141,10 @@
           <div class="column-icon"><a href="https://www.facebook.com/KB.Klaires.beauty/" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
           <div class="column-icon"><a href="https://www.instagram.com/klaires.beauty/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a></div>
         </div>
+        <p>SIRET : 818614257 - Déclaré à la CCI de l'Essonne - TVA non applicable</p>
 
         <hr>
+
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Klaires Beauty - Tous droits reservés</p>
       </footer>
   </body>

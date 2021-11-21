@@ -13,7 +13,6 @@ footer {
 .column-icon {
     flex:50%;
     font-size: 30px;
-    padding: 10px;
     max-width: 30px;
 }
 footer > hr {
@@ -24,7 +23,7 @@ footer > hr {
 }
 footer > p {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 .column-icon > a {
     position: absolute;

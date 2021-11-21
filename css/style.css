@@ -5,7 +5,7 @@
   }
 
 html, body {
-  background-color: rgb(80, 82, 92);
+  background-color: #e7e7e7;
   color: #c4c4c4;
   scroll-behavior: smooth;
 }
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     rgba(26, 26, 26, 0.767),
     rgba(37, 36, 34, 0.692)
   ),
-  url("../img/243587323_1483923755297128_1812078366962313305_n\ \(1\).jpg");
+  url("../img/background-eyenail.jpg");
   min-height: 970px;
   background-attachment: fixed;
   background-position: center;
@@ -132,9 +132,43 @@ h1, h2, h3, h4, h5, h6 {
     rgba(26, 26, 26, 0.767),
     rgba(37, 36, 34, 0.692)
   ),
-  url("../img/243587323_1483923755297128_1812078366962313305_n.jpg");
+  url("../img/background-eyenail.jpg");
   min-height: 300px;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.parallax-nailback {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/background-eyenail.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.parallax-eye {
+  background-image: 
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ),
+  url("../img/eyeback.jpg");
+  min-height: 350px;
+  background-size: 1950px!important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
     rgba(26, 26, 26, 0.767),
     rgba(37, 36, 34, 0.692)
   ),
-  url("../img/250966547_412971453737632_5811749794062590923_n.jpg");
+  url("../img/background-eyenail.jpg");
   min-height: 300px;
   background-attachment: fixed;
   background-position: center;
@@ -204,11 +238,8 @@ h1, h2, h3, h4, h5, h6 {
   text-indent:23px;
 }
 .k {
-  -moz-transform: scale(-1, 1)!important;
-  -webkit-transform: scale(-1, 1)!important;
-  -o-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);  padding: 10px;
+  display: inline-block;
+  padding: 10px;
   font-size: 130px;
   font-family: 'Great Vibes', cursive;
   color: rgba(253, 253, 253, 0.884);
@@ -216,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari et Chrome */
   -o-animation: fadein 1s; /* Opera */
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .hr-title {
@@ -293,6 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px;
   font-size: 27px;
   margin-top: 10px;
+  
 }
 
 .prestations > h1 {
@@ -493,15 +529,14 @@ p.price {
   display: flex;
 }
 .bio-text > p {
-  color: rgba(41, 41, 41, 0.801);
+  color: rgba(26, 26, 26, 0.801);
   text-align: center;
   max-width: 700px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 25px;
+  font-size: 30px;
   cursor: default;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 .bio-text > h3 {
   color: rgb(26, 26, 26);
@@ -784,7 +819,7 @@ p.price {
     rgba(26, 26, 26, 0.767),
     rgba(37, 36, 34, 0.692)
   ),
-  url("../img/four.jpg");
+  url("../img/background-eyenail.jpg");
   min-height: 300px;
   background-attachment: fixed;
   background-position: center; 
@@ -802,14 +837,16 @@ p.price {
   }
 
 .prestation.description {
-  text-align: center;
   padding: 10px;
   font-size: 19px;
+  text-align: center;
   justify-content:space-around;
 }
 
 .prestation.product {
   padding-top: 50px;
+  justify-content:space-around;
+
 }
 .prestation.product > h1 {
   font-size: 30px;
@@ -842,4 +879,182 @@ p.price {
   text-align: center;
   margin-top: -5px;
   color: #666666;
+}
+
+.myp {
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all ease 500ms;
+}
+.myp:hover {
+  box-shadow: rgb(204, 188, 107) 0px 3px 8px;
+}
+
+span.quote {
+  font-family: 'Comforter Brush', cursive;
+  color: rgb(153, 140, 74);
+  font-size: 50px;
+}
+.presentation-me {
+  font-size: 30px;
+  line-height: 1.5em;
+  font-weight: 100;
+  color: #363636;
+  text-align: center;
+}
+.presentation-picture {
+  background-image:  url("../img/goldback.jpg");
+  margin-top: 70px;
+  padding: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  border-radius: 5px;
+}
+.title-paraph {
+  margin-top: 30px;
+  padding-left: 10px;
+  font-size: 50px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(153, 140, 74);
+}
+.content-presentation {
+  background-image:
+  linear-gradient(
+    rgba(26, 26, 26, 0.767),
+    rgba(37, 36, 34, 0.692)
+  ), url("../img/goldback.jpg");
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+}
+.content-presentation-parent {
+
+  top: 100px;
+  padding: 100px;
+  color: rgb(233, 233, 233);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paiement-method.icon {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: fit-content;
+  font-size: 80px;
+  color: rgb(90, 82, 45);;
+}
+
+.paiement-method.text {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: fit-content;
+  font-size: 40px;
+  margin-top: 10px;
+  color: #0e0e0e;
+}
+.diplomes.title {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+} 
+
+.diplomes.box {
+  padding-left: 10px;
+  background-color:rgb(231, 231, 231);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+} 
+.diplomes.box .title {
+  font-size: 38px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #554e30;
+  flex: 50%;
+} 
+
+.diplomes.box .description {
+  font-size: 20px;
+  padding: 10px;
+  color: #575757;
+} 
+.diplomes.siret {
+  text-align: center;
+}
+.paiement-method.subtext {
+  text-align: center;
+  margin-top: -15px;
+  font-style: italic;
+  color: #363636;
+}
+.item {
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+}
+.item > div > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.item > div {
+  height: auto;
+}
+.item > div > div > a {
+  color: rgb(153, 140, 74);
+}
+.item > div > div {
+  display: inline-block;
+}
+.items {
+  margin-top: 50px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#map {
+  height: 100%;
+}
+.itemp {
+  font-size: 20px;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center
+}
+.itemhr {
+  border: 1px solid rgb(153, 140, 74);
+  max-width: 800px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.where-p {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  font-style: italic;
+  color: rgb(153, 140, 74);;
 }

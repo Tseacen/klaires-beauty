@@ -61,7 +61,9 @@
           display: flex;
       }
 
-
+      .more-button {
+        margin-bottom: 20px;
+      }
 
       .bio-text > p {
           width: 90%;
@@ -109,7 +111,42 @@
         -webkit-animation: fadein 1s; /* Safari et Chrome */
         -o-animation: fadein 1s; /* Opera */
       }
+      .img-index-prestation {
+        height: auto;
+        max-width: 90%;
+      }
+      .img-index-prestation:hover {
+        max-width: 95%;
+        height: auto;
+      }
       
+      .parallax-eye {
+        background-size: auto!important;
+        min-height: 120px;
+      }
+      .content-presentation {
+        min-height: 300px;
+      }
+      .diplomes.box {
+        max-width: 90%;
+      }
+      .items {
+        margin-top: 60px;
+      }
+      footer {
+        border-top: 1px solid rgba(128, 128, 128, 0.233);
+      }
+      .where-p {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+        font-style: italic;
+        color: rgb(153, 140, 74);
+    } 
+      .content-presentation-parent {
+        top: 100px;
+        padding: 10px;
+    }
       .text.back {
         font-family: 'Urbanist', sans-serif;
         font-size: 20px;

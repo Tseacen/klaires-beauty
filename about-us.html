@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Urbanist:wght@200&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
@@ -56,9 +56,10 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="pricing.html" class="nav-link">Tarifs</a></li>
-                <li><a href="about-us.html" class="nav-link">Qui sommes-nous ?</a></li>
-                <li><a href="contact-us.html" class="nav-link">Nous contacter</a></li>
+                <li><a href="eye.html" class="nav-link">Beauté du regard</a></li>
+                <li><a href="nail.html" class="nav-link">Beauté des ongles</a></li>
+                <li><a href="about-us.html" class="nav-link">Qui suis-je ?</a></li>
+                <li><a href="contact-us.html" class="nav-link">Me contacter</a></li>
                 <li class="social"><a href="https://www.facebook.com/KB.Klaires.beauty/" target="_blank" class="nav-link"><span class="icon-facebook"></span></a></li>
                 <li class="social"><a href="https://www.instagram.com/klaires.beauty/?hl=fr" target="_blank" class="nav-link"><span class="icon-instagram"></span></a></li>
               </ul>
@@ -86,142 +87,47 @@
 
 
   <body>
+    
 
-    <button onclick="topFunction()" id="myBtn" title="Revenir en haut de la page"><i class="fas fa-arrow-up"></i></button>
-
-    <script>
-      //Get the button:
-      mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-    </script>
-
-      
-      <div class="parallax">
-        <div class="parent">
-          <div class="text front"><span class="k">K</span>laires</div>
-          <hr class="hr-title">
-          <div class="text back">Beauty</div>
-
-          <a class="enter-button" href="#klaires-beauty">E N T R E R</a>
-        </div>
-      </div>
-
-      <div class="content" id="klaires-beauty">
-        <img src="img/logo.png" class="logo-content">
-        <div class="wrapper">
-          <div class="column">
-            <div class="bio-label">
-              <img src="img/eyelashes-curler.png">
-            </div>
-            <hr class="hr-content">
-            <div class="bio-text">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
-            </div>   
-          </div>
-          <div class="column">
-            <div class="bio-label">
-              <img src="img/nail-art.png">
-            </div>
-            <hr class="hr-content">
-            <div class="bio-text">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
-            </div>           
-          </div>
-        </div>
-        <a class="more-button" href="pricing.html">En savoir plus</a>
-
-      </div>
-
-      <div class="parallax-second"></div>
-
-      <div class="content">
-        <div>
-          <div class="bio-label">
-            <img src="img/bio.png">
-          </div>
-          <hr class="hr-content">
-
-          <h1 class="bio-label-text">Des produits label bio</h1>
-
-          <div class="bio-text">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus laboriosam sed suscipit omnis consectetur! Iste laboriosam quod itaque rem minima nemo voluptatum nisi amet! Corrupti tenetur eos iste deleniti.</p>
-          </div> 
+      <div class="content-presentation">
+        <div class="content-presentation-parent">
+          <h1 class="title-paraph">Ma petite histoire</h1>
           
-          <div class="wrapper labels4">
-            <div class="column">
-              <div class="bio-label">
-                <img src="img/animal-de-compagnie.png">
-              </div>
-              <div class="bio-text">
-                <h3>Non testé sur <strong>les animaux</strong></h3>
-              </div>   
-            </div>
-            <div class="column">
-              <div class="bio-label">
-                <img src="img/5-stars.png">
-              </div>
-              <div class="bio-text">
-                <h3>Cote de sécurité <strong>5 étoiles</strong></h3>
-              </div>           
-            </div>
-            <div class="column">
-              <div class="bio-label">
-                <img src="img/vegan.png">
-              </div>
-              <div class="bio-text">
-                <h3><strong>Vegan</strong></h3>
-              </div>           
-            </div>
-            <div class="column">
-              <div class="bio-label">
-                <img src="img/non-toxic (1).png">
-              </div>
-              <div class="bio-text">
-                <h3>Non toxic <strong>10-FREE</strong></h3>
-              </div>           
-            </div>
+        </div>
+      </div>
+      <div class="content">
+        <p class="presentation-me">
+          <span class="quote">“</span>
+          Après avoir acquis et travaillé dans le tertiaire pendant plusieurs années, je me suis reconverti dans un milieu professionnel qui me ressemble et me donne entière satisfaction.
+          <br>
+          La création de cette société a pour but, au travers d'un moment de détente de sublimer vos ongles et d'embellir votre regard en vous faisant partager ma passion.
+          <span class="quote">”</span></p>
+
+          <p class="presentation-me">
+            Au plaisir de pouvoir vous rencontrer
+          </p>
+      </div>
+      <div class="content">
+        <h1 class="diplomes title">Diplômes & formations</h1>
+        <p class="diplomes siret">SIRET : 818614257</p>
+        <div class="wrapper">
+          <div class="diplomes box">
+            <h1 class="title">Prothésiste ongulaire</h1>
+            <p class="description">Certifié par la Students Nails Academy (certificat d'excellence)<br>National Perfect Beauty (Master Pro)<br>Formé par le centre de formation Cassydi Beauté</p>
+          </div>
+          <div class="diplomes box">
+            <h1 class="title">Beauté du regard</h1>
+            <p class="description">Diplomé par le centre de formation FC Beauté</p>
           </div>
         </div>
       </div>
-
-
-      <div class="parallax-third"></div>
-
-      <div class="content">
-        <h1 class="creations-title">Quelques créations</h1>
-        <div class="prestations-index">
-          <img src="img/creations/creation1.jpg" class="img-index-prestation">
-          <img src="img/creations/creation2.jpg" class="img-index-prestation">
-          <img src="img/creations/creation3.jpg" class="img-index-prestation">
-          <img src="img/creations/creation4.jpg" class="img-index-prestation">
-        </div>
-        <a class="more-button" href="pricing.html">En voir d'avantages</a>
-      </div>
-
-      <div class="parallax-four"></div>
-
 
       <footer>
         <div class="row-icon">
           <div class="column-icon"><a href="https://www.facebook.com/KB.Klaires.beauty/" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
           <div class="column-icon"><a href="https://www.instagram.com/klaires.beauty/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a></div>
         </div>
+        <p>SIRET : 818614257 - Déclaré à la CCI de l'Essonne - TVA non applicable</p>
 
         <hr>
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Klaires Beauty - Tous droits reservés</p>
